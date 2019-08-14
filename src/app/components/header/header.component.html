@@ -1,0 +1,19 @@
+<ul>
+  <li>
+    <a [ngClass]="{ active: activeRoute === '/' }" routerLink="">Home</a>
+  </li>
+  <li>
+    <a
+      [ngClass]="{
+        active: activeRoute == '/todos'
+      }"
+      routerLink="todos"
+      >Todo List</a
+    >
+  </li>
+  <li>
+    <a [ngClass]="{ active: activeRoute === '/todoadd' }" routerLink="todoadd"
+      >Add Todo</a
+    >
+  </li>
+</ul>

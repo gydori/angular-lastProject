@@ -1,0 +1,17 @@
+<tr>
+  <td width="200px">
+    <div>{{ todo.name }}</div>
+  </td>
+  <td width="200px">
+    <div>{{ todo.description }}</div>
+  </td>
+  <td width="200px">
+    <div>{{ todo.createdAt | ownDate }}</div>
+  </td>
+  <td width="80px">
+    <button (click)="delete()">Delete</button>
+  </td>
+  <td width="80px">
+    <a routerLink="/todoedit/{{ todo.id }}"><button>Edit</button></a>
+  </td>
+</tr>
